@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+               />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                >
+
+                <EditText
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:id="@+id/prop_tv_name"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lines="3"
+                    android:text=""
+                    android:textSize="16sp" />
+
+            </ScrollView>
+        </TableRow>
+
+
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:text="@string/url"
+                android:textSize="16sp"/>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textIsSelectable="true"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:id="@+id/prop_tv_url"
+                    android:gravity="center_vertical"
+                    android:lines="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"/>
+            </ScrollView>
+            <Button
+                android:layout_gravity="center_vertical"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:id="@+id/prop_copy_url"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:text="@string/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:text="@string/path"
+                android:textSize="18sp"/>
+
+            <ScrollView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                >
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/prop_tv_path"
+                android:lines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"/>
+            </ScrollView>
+
+    </TableRow>
+
+    <TableRow android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prop_tv_date"
+            android:gravity="center_vertical"
+            android:lines="3"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+    </TableRow>
+
+
+    <TableRow android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="45"
+            android:layout_height="wrap_content"
+            android:text="@string/downloaded"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prop_tv_cur_size"
+            android:inputType="textMultiLine"
+            android:gravity="right"
+            android:lines="1"
+            android:maxLines="2"
+            android:layout_weight="55"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+    </TableRow>
+
+
+
+    <TableRow android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:text="@string/total_size"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prop_tv_size"
+            android:inputType="textMultiLine"
+            android:gravity="right"
+            android:lines="1"
+            android:maxLines="2"
+            android:layout_weight="70"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+    </TableRow>
+
+
+    <TableRow android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:text="@string/state"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prop_tv_stat"
+            android:inputType="textMultiLine"
+            android:gravity="right"
+            android:lines="1"
+            android:maxLines="2"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+    </TableRow>
+
+</TableLayout>
+    </RelativeLayout>

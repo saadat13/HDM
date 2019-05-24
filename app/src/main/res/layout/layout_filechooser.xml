@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="300dp">
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:minHeight="35dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/btn_back"
+            android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward" />
+
+        <ImageView
+            android:id="@+id/btn_newfolder"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_newfolder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/chert"
+        android:layout_marginTop="5dp"
+        android:layout_weight="60"
+        android:layout_margin="5dp"
+        android:id="@+id/file_chooser_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="30dp"
+        />
+
+    <TextView
+        android:layout_margin="6dp"
+        android:textSize="12sp"
+        android:minHeight="20dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:id="@+id/fc_tv_cur_dir"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:text="current directory"
+        android:textColor="@android:color/black" />
+
+
+    <LinearLayout
+        android:minHeight="40dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:text="@string/SDCard"
+            android:id="@+id/fc_btn_sdcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:text="@string/inMem"
+            android:id="@+id/fc_btn_internal_storage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textSize="12sp"
+            android:id="@+id/fc_btn_select"
+            android:textAllCaps="false"
+            android:text="@string/select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textSize="12sp"
+            android:id="@+id/fc_btn_cancel"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

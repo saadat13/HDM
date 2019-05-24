@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#55a427</color>
+    <color name="colorPrimaryDark">#55a427</color>
+    <color name="colorAccent">#d951f7</color>
+
+    <color name="downloadbar_bgColor">#C3235704</color>
+    <color name="progressbar_bg_color">#DD3F00</color>
+    <color name="fileSize_textColor">#c0f988</color>
+    <color name="newdownload_dialog_bgColor">#e854963c</color>
+    <color name="progressbarColor">#FEF54A09</color>
+    <color name="fab_bg_tint">#488f1e</color>
+    <color name="bg_delete_dialog">#FFD951F7</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/om_newDownload"
+        android:title="@string/newdownload" />
+    <item
+        android:id="@+id/om_startAll"
+        android:title="@string/startAll" />
+    <item
+        android:id="@+id/om_stopAll"
+        android:title="@string/stopAll" />
+    <item
+        android:id="@+id/om_selectAll"
+        android:title="@string/selectAll" />
+    <item
+        android:id="@+id/om_deselectAll"
+        android:title="@string/deselectAll" />
+    <item
+        android:id="@+id/om_invertSelection"
+        android:title="@string/invertSelection" />
+    <item
+        android:id="@+id/om_clearAll"
+        android:title="@string/clearAll"/>
+    <item android:id="@+id/om_addFake"
+        android:title="add fake"/>
+
+</menu>
